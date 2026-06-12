@@ -1,0 +1,43 @@
+name: Update Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # Daily at midnight
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate trophy SVG
+        uses: leonardosilva/github-profile-trophy-readme@master
+        with:
+          username: Ivaloz
+          row: 7
+          frame: false
+          theme: tokyonight
+
+      - name: Generate streak stats
+        uses: github-readme-streak-stats@v2.1.0
+        with:
+          user: Ivaloz
+          theme: tokyonight
+          background: "0D1117"
+          stroke: "8AB4F8"
+          ring: "F59E0B"
+          fire: "F59E0B"
+          currStreakLabel: "C9D1D9"
+          sideLabels: "C9D1D9"
+
+      - name: Commit and push
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "chore: update stats [skip ci]"
+          git push
