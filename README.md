@@ -1,7 +1,7 @@
 <h1 align="center">Hi, I'm Byron 👋</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=3000&pause=1000&color=8AB4F8&center=true&vCenter=true&width=620&lines=Shipping+fixes+to+AI+developer+tools;Rust+%2B+TypeScript+%2B+Python;Open+source+enthusiast;中文开发者+%C2%B7+GMT%2B8" alt="typing intro" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=3000&pause=1000&color=8AB4F8&center=true&vCenter=true&width=620&lines=Shipping+fixes+to+AI+developer+tools;Rust+%2B+TypeScript+%2B+Python;Open+source+enthusiast;中文开发者+%C2%B7+GMT%2B8" />
 </p>
 
 ---
